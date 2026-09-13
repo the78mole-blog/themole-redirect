@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>themole.de → the78mole.de</title>
+<link rel="canonical" href="https://the78mole.de/">
+<meta name="robots" content="noindex">
+<!-- Sofortige Weiterleitung ohne Javascript. Suchmaschinen behandeln ein
+     Refresh mit Verzögerung 0 wie einen 301, sofern ein canonical dabeisteht. -->
+<meta http-equiv="refresh" content="0; url=https://the78mole.de/">
+<script>
+  // Pfad und Query mitnehmen: themole.de/blog/x -> the78mole.de/blog/x
+  // Das leistet das Meta-Refresh allein nicht.
+  (function () {
+    var ziel = "https://the78mole.de" + location.pathname + location.search + location.hash;
+    location.replace(ziel);
+  })();
+</script>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; margin: 4rem auto; max-width: 34rem; padding: 0 1rem; }
+  a { color: #0b6; }
+</style>
+</head>
+<body>
+  <p>Diese Seite ist umgezogen nach <a href="https://the78mole.de/">the78mole.de</a>.</p>
+  <p>Falls die Weiterleitung nicht startet, bitte dem Link folgen.</p>
+</body>
+</html>
